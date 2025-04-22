@@ -329,3 +329,67 @@ footer {
     font-size: 1rem;
   }
 }
+
+.project-detail.pink-style {
+  background-color: #fff0f600;
+  padding: 6rem 2rem 4rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.project-detail.pink-style h1,
+.project-detail.pink-style h2,
+.project-detail.pink-style h3 {
+  color: pink;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail.pink-style p,
+.project-detail.pink-style li {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.project-detail.pink-style ul {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-detail.pink-style blockquote {
+  background-color: #ffe2ec;
+  border-left: 4px solid #FF82B2;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #444;
+  border-radius: 10px;
+}
+
+.mockup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.mockup-grid img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.project-detail.pink-style img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin-top: 2rem; 
+  margin-bottom: 2rem; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-detail.pink-style img:hover {
+  transform: scale(1.2); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
