@@ -68,40 +68,55 @@ nav {
 }
 
 /* Intro Grid */
+/* Intro Sectie */
 .intro {
   padding: 8rem 2rem 4rem;
-  background-color: #FFF0F6;
+  background-color: #FFF0F6; /* Je kunt dit aanpassen naar de gewenste achtergrondkleur */
 }
 
+/* Grid Layout voor Intro */
 .intro-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
+  grid-template-columns: 1fr 1fr; /* Zorg ervoor dat er twee kolommen zijn */
   gap: 3rem;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Intro tekst */
 .intro-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 4rem; /* Verhoog de grootte van de tekst */
+  font-weight: bold;
   color: #111827;
+  margin-bottom: 1rem; /* Je kunt deze waarde aanpassen als je de ruimte wilt verkleinen */
 }
 
-.intro-text p {
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 1.5rem;
-}
-
+/* Intro afbeelding */
 .intro-img img {
   width: 100%;
-  max-width: 400px;
+  max-width: 400px; /* Zorg ervoor dat de afbeelding een bepaalde breedte heeft */
   transform: scale(1.19);
   border-radius: 20px;
   transition: transform 0.5s ease-in-out;
   display: block;
   margin: 0 auto;
+}
+
+/* Optioneel: Zorg dat de tekst en afbeelding goed worden uitgelijnd op kleinere schermen */
+@media (max-width: 768px) {
+  .intro-grid {
+    grid-template-columns: 1fr; /* Zet alles onder elkaar op kleinere schermen */
+    text-align: center;
+  }
+
+  .intro-text h1 {
+    font-size: 2.5rem; /* Maak de tekst kleiner op kleinere schermen */
+  }
+
+  .intro-img img {
+    max-width: 300px; /* Pas de afbeelding aan voor kleinere schermen */
+  }
 }
 
 
